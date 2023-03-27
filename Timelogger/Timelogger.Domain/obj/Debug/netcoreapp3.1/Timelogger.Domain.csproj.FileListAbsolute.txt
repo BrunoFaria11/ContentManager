@@ -1,0 +1,10 @@
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Domain/bin/Debug/netcoreapp3.1/Timelogger.Domain.deps.json
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Domain/bin/Debug/netcoreapp3.1/Timelogger.Domain.dll
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Domain/bin/Debug/netcoreapp3.1/Timelogger.Domain.pdb
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Domain/obj/Debug/netcoreapp3.1/Timelogger.Domain.csproj.AssemblyReference.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Domain/obj/Debug/netcoreapp3.1/Timelogger.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Domain/obj/Debug/netcoreapp3.1/Timelogger.Domain.AssemblyInfoInputs.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Domain/obj/Debug/netcoreapp3.1/Timelogger.Domain.AssemblyInfo.cs
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Domain/obj/Debug/netcoreapp3.1/Timelogger.Domain.csproj.CoreCompileInputs.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Domain/obj/Debug/netcoreapp3.1/Timelogger.Domain.dll
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Domain/obj/Debug/netcoreapp3.1/Timelogger.Domain.pdb

@@ -1,0 +1,15 @@
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/Timelogger.Persistance.deps.json
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/Timelogger.Persistance.dll
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/Timelogger.Persistance.pdb
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/Timelogger.Application.dll
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/Timelogger.Domain.dll
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/Timelogger.Application.pdb
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/Timelogger.Domain.pdb
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/Timelogger.Persistance.csproj.AssemblyReference.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/Timelogger.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/Timelogger.Persistance.AssemblyInfoInputs.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/Timelogger.Persistance.AssemblyInfo.cs
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/Timelogger.Persistance.csproj.CoreCompileInputs.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/Timelogger.Persistance.csproj.CopyComplete
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/Timelogger.Persistance.dll
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/Timelogger.Persistance.pdb
