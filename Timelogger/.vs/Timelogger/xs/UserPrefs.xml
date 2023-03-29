@@ -2,6 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.Api.Timelogger PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Timelogger.Aplication FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Timelogger.Test/Timelogger.Domain.Test/obj/Debug/netcoreapp3.1/Timelogger.Domain.Test.AssemblyInfo.cs">
     <Files>
       <File FileName="Timelogger.Application/Invoice/Commands/Update/UpdateInvoiceValidation.cs" Line="13" Column="1" />
@@ -85,4 +86,7 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>Timelogger.Api.Test/Timelogger.Aplication.Test/Timelogger.Aplication.Test.csproj</String>
+  </DisabledProjects>
 </Properties>
