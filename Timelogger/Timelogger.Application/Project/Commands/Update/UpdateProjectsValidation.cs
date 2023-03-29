@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using System;
+using FluentValidation;
 
 namespace Timelogger.Commands
 {
@@ -16,15 +17,17 @@ namespace Timelogger.Commands
 
             RuleFor(p => p.DeadLine)
                          .NotEmpty().WithMessage("{PropertyName} required.")
-                         .NotNull();
+                         .NotNull()
+                         .Must(x => x > DateTime.Now).WithMessage("{PropertyName} must be after today.");
+
 
             RuleFor(p => p.TimePerWeek)
                 .NotEmpty().WithMessage("{PropertyName} required.")
                 .NotNull();
 
             RuleFor(p => p.IsCompleted)
-                .NotEmpty().WithMessage("{PropertyName} required.")
-                .NotNull();
+                .Must((model, field) => field == null ? false : true)
+                .WithMessage("{PropertyName} required.");
         }
     }
 }

@@ -14,6 +14,7 @@ namespace Timelogger.Repositories
             _context = context;
         }
 
+       
     }
 }
 

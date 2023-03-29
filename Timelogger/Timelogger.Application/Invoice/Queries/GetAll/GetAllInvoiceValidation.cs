@@ -7,7 +7,9 @@ namespace Timelogger.Commands
     {
         public GetAllInvoiceValidation()
         {
-      
+            RuleFor(p => p.ProjectId)
+                   .NotEmpty().WithMessage("{PropertyName} required.")
+                   .NotNull();
         }
     }
 }

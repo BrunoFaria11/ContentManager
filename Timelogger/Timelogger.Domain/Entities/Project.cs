@@ -23,8 +23,5 @@ namespace Timelogger.Entities
 		public decimal TimePerWeek { get; set; }
 		public double TotalTimeSpent { get; set; }
 		public bool IsCompleted { get; set; }
-
-		public ICollection<TimerHistory> TimerHistory { get; set; }
-		public ICollection<Invoice> Invoices { get; set; }
 	}
 }

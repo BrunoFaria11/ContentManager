@@ -8,7 +8,7 @@ namespace Timelogger.Commands
 {
     public class GetAllInvoiceCommand :  IRequest<Response<List<Invoice>>>
     {
-        public bool IsCompleted { get; set; }
+        public string ProjectId { get; set; }
     }
 }
 

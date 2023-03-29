@@ -41,6 +41,5 @@ namespace Timelogger.Entities
 		public string CustomerName { get; set; }
 		public string CustomerDocNumber { get; set; }
 
-		public Project Project { get; set; }
 	}
 }

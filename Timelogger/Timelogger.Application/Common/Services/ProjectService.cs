@@ -40,6 +40,11 @@ namespace Timelogger.Common.Services
             await _unitOfWork.SaveChangesAsync(cancellationToken);
             return newProject;
         }
+
+        public async Task<Project> GetProjectByName(string name, CancellationToken cancellationToken)
+        {
+            return await _unitOfWork.ProjectRepository.FindAsync(x => x.Name == name, cancellationToken);
+        }
     }
 }
 

@@ -24,9 +24,9 @@ namespace Timelogger.Common.Services
             return newTimerHistory;
         }
 
-        public async Task<List<TimerHistory>> GetAllTimerHistory(bool isCompleted, CancellationToken cancellationToken)
+        public async Task<List<TimerHistory>> GetAllTimerHistory(string projectId, CancellationToken cancellationToken)
         {
-            return await _unitOfWork.TimerHistoryRepository.FindAllAsync(x => x.Id != "", cancellationToken);
+            return await _unitOfWork.TimerHistoryRepository.FindAllAsync(x => x.ProjectId == projectId, cancellationToken);
         }
 
         public async Task<TimerHistory> GetTimerHistory(string id, CancellationToken cancellationToken)

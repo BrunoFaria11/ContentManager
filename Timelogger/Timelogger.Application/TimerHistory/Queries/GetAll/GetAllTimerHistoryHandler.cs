@@ -20,7 +20,7 @@ namespace Timelogger.Commands
 
         public async Task<Response<List<TimerHistory>>> Handle(GetAllTimerHistoryCommand request, CancellationToken cancellationToken)
        {
-           var response = await _timerHistoryService.GetAllTimerHistory(request.IsCompleted, cancellationToken);
+           var response = await _timerHistoryService.GetAllTimerHistory(request.ProjectId, cancellationToken);
            return new Response<List<TimerHistory>>(response);
        }
     }

@@ -8,7 +8,7 @@ namespace Timelogger.Commands
 {
     public class GetAllTimerHistoryCommand :  IRequest<Response<List<TimerHistory>>>
     {
-        public bool IsCompleted { get; set; }
+        public string ProjectId { get; set; }
     }
 }
 

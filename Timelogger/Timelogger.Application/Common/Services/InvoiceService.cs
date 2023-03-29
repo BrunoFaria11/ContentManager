@@ -24,9 +24,9 @@ namespace Timelogger.Common.Services
             return newInvoice;
         }
 
-        public async Task<List<Invoice>> GetAllInvoices(bool isCompleted, CancellationToken cancellationToken)
+        public async Task<List<Invoice>> GetAllInvoices(string projectId, CancellationToken cancellationToken)
         {
-            return await _unitOfWork.InvoiceRepository.FindAllAsync(x => x.Id != "", cancellationToken);
+            return await _unitOfWork.InvoiceRepository.FindAllAsync(x => x.ProjectId == projectId, cancellationToken);
         }
 
         public async Task<Invoice> GetInvoice(string id, CancellationToken cancellationToken)

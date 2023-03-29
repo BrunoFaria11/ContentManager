@@ -1,0 +1,5 @@
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/obj/Debug/netcoreapp3.1/Timelogger.Test.csproj.AssemblyReference.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/obj/Debug/netcoreapp3.1/Timelogger.Test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/obj/Debug/netcoreapp3.1/Timelogger.Test.AssemblyInfoInputs.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/obj/Debug/netcoreapp3.1/Timelogger.Test.AssemblyInfo.cs
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/obj/Debug/netcoreapp3.1/Timelogger.Test.csproj.CoreCompileInputs.cache

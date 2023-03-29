@@ -20,7 +20,7 @@ namespace Timelogger.Commands
 
         public async Task<Response<List<Invoice>>> Handle(GetAllInvoiceCommand request, CancellationToken cancellationToken)
        {
-           var response = await _invoiceService.GetAllInvoices(request.IsCompleted, cancellationToken);
+           var response = await _invoiceService.GetAllInvoices(request.ProjectId, cancellationToken);
            return new Response<List<Invoice>>(response);
        }
     }

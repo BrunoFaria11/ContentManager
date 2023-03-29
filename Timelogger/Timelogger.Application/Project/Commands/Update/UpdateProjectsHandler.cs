@@ -1,6 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
+using Timelogger.Application.Common.Exceptions;
 using Timelogger.Application.Common.Models;
 using Timelogger.Common.Interfaces.Services;
 using Timelogger.Entities;
@@ -19,15 +20,21 @@ namespace Timelogger.Commands
 
         public async Task<Response<Project>> Handle(UpdateProjectsCommand request, CancellationToken cancellationToken)
        {
-            var project = await _projectService.GetProject(request.Id, cancellationToken);
+            var project = await _projectService.GetProjectByName(request.Name, cancellationToken);
+            if (project != null && project.Id != request.Id)
+            {
+                throw new ApiException($"Project already exist");
+            }
 
-            project.Name = request.Name;
-            project.DeadLine = request.DeadLine;
-            project.TimePerWeek = request.TimePerWeek;
-            project.IsCompleted = request.IsCompleted;
+            var updatedProject = await _projectService.GetProject(request.Id, cancellationToken);
+
+            updatedProject.Name = request.Name;
+            updatedProject.DeadLine = request.DeadLine;
+            updatedProject.TimePerWeek = request.TimePerWeek;
+            updatedProject.IsCompleted = request.IsCompleted;
 
 
-           var response = await _projectService.UpdateProject(project, cancellationToken);
+           var response = await _projectService.UpdateProject(updatedProject, cancellationToken);
            return new Response<Project>(response);
        }
     }

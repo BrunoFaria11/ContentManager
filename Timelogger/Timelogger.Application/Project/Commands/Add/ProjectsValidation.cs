@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using System;
+using FluentValidation;
 
 namespace Timelogger.Commands
 {
@@ -12,7 +13,9 @@ namespace Timelogger.Commands
 
             RuleFor(p => p.DeadLine)
                          .NotEmpty().WithMessage("{PropertyName} required.")
-                         .NotNull();
+                         .NotNull()
+                         .Must(x => x > DateTime.Now).WithMessage("{PropertyName} must be after today.");
+
 
             RuleFor(p => p.TimePerWeek)
                 .NotEmpty().WithMessage("{PropertyName} required.")

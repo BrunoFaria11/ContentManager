@@ -6,7 +6,7 @@ export default function Table(props: any) {
       <thead className="bg-gray-200">
         <tr>
           {props.headers.map((header: string) => {
-            return <th>{header}</th>;
+            return <th style={{textAlign: "center"}}>{header}</th>;
           })}
         </tr>
       </thead>

@@ -17,58 +17,26 @@ namespace Timelogger.Api.Controllers
 		[HttpPost]
 		public async Task<IActionResult> CreateTimerHistory(TimerHistoryCommand request)
 		{
-			try
-			{
-				var response = await Mediator.Send(request);
-				return response is not null ? Ok(response) : NotFound();
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
+			return Ok(await Mediator.Send(request));
 		}
 
 		[HttpGet("GetAllTimerHistories", Name = "GetAllTimerHistories")]
 		public async Task<IActionResult> GetAllTimerHistories([FromQuery]GetAllTimerHistoryCommand request)
 		{
-			try
-			{
-				var response = await Mediator.Send(request);
-				return response is not null ? Ok(response) : NotFound();
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
+			return Ok(await Mediator.Send(request));
 		}
 
 
 		[HttpGet]
 		public async Task<IActionResult> GetTimerHistory([FromQuery] GetTimerHistoryCommand request)
 		{
-			try
-			{
-				var response = await Mediator.Send(request);
-				return response is not null ? Ok(response) : NotFound();
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
+			return Ok(await Mediator.Send(request));
 		}
 
 		[HttpPatch]
 		public async Task<IActionResult> UpdateTimerHistory(UpdateTimerHistoryCommand request)
 		{
-			try
-			{
-				var response = await Mediator.Send(request);
-				return response is not null ? Ok(response) : NotFound();
-			}
-			catch (Exception ex)
-			{
-				return BadRequest(ex.Message);
-			}
+			return Ok(await Mediator.Send(request));
 		}
 	}
 }

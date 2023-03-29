@@ -12,6 +12,7 @@ namespace Timelogger.Common.Interfaces.Services
         Task<List<Project>> GetAllProjects(bool isCompleted, CancellationToken cancellationToken);
         Task<Project> GetProject(string id, CancellationToken cancellationToken);
         Task<Project> UpdateProject(Project project, CancellationToken cancellationToken);
+        Task<Project> GetProjectByName(string name, CancellationToken cancellationToken);
     }
 }
 
