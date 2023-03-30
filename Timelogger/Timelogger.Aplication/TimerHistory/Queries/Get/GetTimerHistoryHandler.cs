@@ -23,12 +23,12 @@ namespace Timelogger.Aplication.Test
             var expectedTimerHistory = new TimerHistory { Id = timerHistoryId };
             var mockTimerHistoryService = new Mock<ITimerHistoryService>();
             mockTimerHistoryService
-                .Setup(x => x.GetTimerHistory(timerHistoryId, default))
+                .Setup(x => x.GetTimerHistory(timerHistoryId, It.IsAny<CancellationToken>()))
                 .ReturnsAsync(expectedTimerHistory);
             var handler = new GetTimerHistoryHandler(mockTimerHistoryService.Object);
 
             // Act
-            var result = await handler.Handle(new GetTimerHistoryCommand { Id = timerHistoryId }, default);
+            var result = await handler.Handle(new GetTimerHistoryCommand { Id = timerHistoryId }, CancellationToken.None);
 
             // Assert
             Assert.NotNull(result);

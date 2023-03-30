@@ -33,7 +33,7 @@ namespace Timelogger.Commands
                 throw new ApiException($"Project doesn't exist");
             }
 
-            if (histories.Any(x=> (x.StartDate.Date >= request.StartDate && x.StartDate <= request.EndDate)))
+            if (histories.Any(x=> x.StartDate.Date >= request.StartDate && x.StartDate <= request.EndDate))
             {
                 throw new ApiException($"History already exist");
             }

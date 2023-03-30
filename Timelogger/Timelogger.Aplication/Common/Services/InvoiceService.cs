@@ -30,6 +30,7 @@ namespace Timelogger.Aplication.Test
             var invoice = new Invoice();
 
             // Act
+            _unitOfWorkMock.Setup(x => x.InvoiceRepository.AddAsync(It.IsAny<Invoice>(), It.IsAny<CancellationToken>())).ReturnsAsync(invoice);
             var result = await _invoiceService.AddInvoice(invoice, cancellationToken);
 
             // Assert
@@ -44,8 +45,12 @@ namespace Timelogger.Aplication.Test
             // Arrange
             var cancellationToken = new CancellationToken();
             var projectId = "project1";
+            var invoices = new List<Invoice>() {
+                new Invoice() { Id = "invoice1" }
+            };
 
             // Act
+            _unitOfWorkMock.Setup(x => x.InvoiceRepository.FindAllAsync(It.IsAny<Expression<Func<Invoice, bool>>>(), cancellationToken)).ReturnsAsync(invoices);
             var result = await _invoiceService.GetAllInvoices(projectId, cancellationToken);
 
             // Assert
@@ -60,8 +65,10 @@ namespace Timelogger.Aplication.Test
             // Arrange
             var cancellationToken = new CancellationToken();
             var id = "invoice1";
+            var invoice = new Invoice() { Id = "invoice1" };
 
             // Act
+            _unitOfWorkMock.Setup(x => x.InvoiceRepository.FindAsync(It.IsAny<Expression<Func<Invoice, bool>>>(), cancellationToken)).ReturnsAsync(invoice);
             var result = await _invoiceService.GetInvoice(id, cancellationToken);
 
             // Assert
@@ -78,6 +85,7 @@ namespace Timelogger.Aplication.Test
             var invoice = new Invoice() { Id = "invoice1" };
 
             // Act
+            _unitOfWorkMock.Setup(x => x.InvoiceRepository.UpdateAsync(It.IsAny<Invoice>(), It.IsAny<string>(), It.IsAny<CancellationToken>())).ReturnsAsync(invoice);
             var result = await _invoiceService.UpdateInvoice(invoice, cancellationToken);
 
             // Assert

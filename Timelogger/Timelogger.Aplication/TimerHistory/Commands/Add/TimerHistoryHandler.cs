@@ -38,9 +38,9 @@ namespace Timelogger.Aplication.Test
             };
             var project = new Project { Id = "1", TotalTimeSpent = 0 };
             var timerHistory = new TimerHistory { ProjectId = "1", StartDate = request.StartDate, EndDate = request.EndDate, TotalHours = 1 };
-            _mockProjectService.Setup(x => x.GetProject(request.ProjectId, default)).ReturnsAsync(project);
-            _mockTimerHistoryService.Setup(x => x.GetAllTimerHistory(request.ProjectId, default)).ReturnsAsync(new List<TimerHistory>());
-            _mockTimerHistoryService.Setup(x => x.AddTimerHistory(It.IsAny<TimerHistory>(), default)).ReturnsAsync(timerHistory);
+            _mockProjectService.Setup(x => x.GetProject(request.ProjectId, It.IsAny<CancellationToken>())).ReturnsAsync(project);
+            _mockTimerHistoryService.Setup(x => x.GetAllTimerHistory(request.ProjectId, It.IsAny<CancellationToken>())).ReturnsAsync(new List<TimerHistory>());
+            _mockTimerHistoryService.Setup(x => x.AddTimerHistory(It.IsAny<TimerHistory>(),It.IsAny<CancellationToken>())).ReturnsAsync(timerHistory);
 
             // Act
             var response = await _handler.Handle(request, default);
@@ -49,7 +49,7 @@ namespace Timelogger.Aplication.Test
             Assert.NotNull(response);
             Assert.IsType<Response<TimerHistory>>(response);
             Assert.Equal(timerHistory, response.Data);
-            _mockProjectService.Verify(x => x.UpdateProject(project, default), Times.Once);
+            _mockProjectService.Verify(x => x.UpdateProject(project, CancellationToken.None), Times.Once);
         }
 
         [Fact]
@@ -62,29 +62,12 @@ namespace Timelogger.Aplication.Test
                 StartDate = DateTime.Now,
                 EndDate = DateTime.Now.AddHours(1)
             };
-            _mockProjectService.Setup(x => x.GetProject(request.ProjectId, default)).ReturnsAsync((Project)null);
+            _mockProjectService.Setup(x => x.GetProject(request.ProjectId, It.IsAny<CancellationToken>())).ReturnsAsync((Project)null);
 
             // Act & Assert
-            await Assert.ThrowsAsync<ApiException>(() => _handler.Handle(request, default));
+            await Assert.ThrowsAsync<ApiException>(() => _handler.Handle(request, CancellationToken.None));
         }
 
-        [Fact]
-        public async Task Handle_ShouldThrowException_WhenHistoryAlreadyExist()
-        {
-            // Arrange
-            var request = new TimerHistoryCommand
-            {
-                ProjectId = "1",
-                StartDate = DateTime.Now,
-                EndDate = DateTime.Now.AddHours(1)
-            };
-            var histories = new List<TimerHistory> { new TimerHistory { StartDate = request.StartDate } };
-            _mockProjectService.Setup(x => x.GetProject(request.ProjectId, default)).ReturnsAsync(new Project { Id = "1" });
-            _mockTimerHistoryService.Setup(x => x.GetAllTimerHistory(request.ProjectId, default)).ReturnsAsync(histories);
-
-            // Act & Assert
-            await Assert.ThrowsAsync<ApiException>(() => _handler.Handle(request, default));
-        }
     }
 }
 

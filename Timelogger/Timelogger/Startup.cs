@@ -78,26 +78,7 @@ namespace Timelogger
             app.UseMiddleware<ErrorHandlerMiddleware>();
             //app.UseMvc();
 
-            var serviceScopeFactory = app.ApplicationServices.GetService<IServiceScopeFactory>();
-            using (var scope = serviceScopeFactory.CreateScope())
-            {
-                SeedDatabase(scope);
-            }
-        }
-
-        private static void SeedDatabase(IServiceScope scope)
-        {
-
-            var context = scope.ServiceProvider.GetService<ApiContext>();
-            var testProject1 = new Project
-            {
-                Id = "1",
-                Name = "e-conomic Interview"
-            };
-
-            context.Projects.Add(testProject1);
-
-            context.SaveChanges();
+            //var serviceScopeFactory = app.ApplicationServices.GetService<IServiceScopeFactory>();
         }
     }
 }

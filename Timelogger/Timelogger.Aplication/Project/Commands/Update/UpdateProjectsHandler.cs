@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Moq;
 using Timelogger.Application.Common.Exceptions;
@@ -41,11 +42,11 @@ namespace Timelogger.Aplication.Test
                 TimePerWeek = 20,
                 IsCompleted = false
             };
-            _projectServiceMock.Setup(s => s.GetProjectByName(request.Name, default))
+            _projectServiceMock.Setup(s => s.GetProjectByName(request.Name, It.IsAny<CancellationToken>()))
                 .ReturnsAsync(existingProject);
 
             // Act & Assert
-            await Assert.ThrowsAsync<ApiException>(() => _updateProjectsHandler.Handle(request, default));
+            await Assert.ThrowsAsync<ApiException>(() => _updateProjectsHandler.Handle(request, CancellationToken.None));
         }
 
         [Fact]
@@ -76,15 +77,15 @@ namespace Timelogger.Aplication.Test
                 TimePerWeek = 40,
                 IsCompleted = false
             };
-            _projectServiceMock.Setup(s => s.GetProjectByName(request.Name, default))
+            _projectServiceMock.Setup(s => s.GetProjectByName(It.IsAny<string>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync((Project)null);
-            _projectServiceMock.Setup(s => s.GetProject(request.Id, default))
+            _projectServiceMock.Setup(s => s.GetProject(It.IsAny<string>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(existingProject);
-            _projectServiceMock.Setup(s => s.UpdateProject(updatedProject, default))
+            _projectServiceMock.Setup(s => s.UpdateProject(It.IsAny<Project>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(updatedProject);
 
             // Act
-            var response = await _updateProjectsHandler.Handle(request, default);
+            var response = await _updateProjectsHandler.Handle(request, CancellationToken.None);
 
             // Assert
             Assert.Equal(updatedProject, response.Data);

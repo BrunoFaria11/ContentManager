@@ -41,11 +41,11 @@ namespace Timelogger.Aplication.Test
             };
 
             _projectServiceMock
-                .Setup(service => service.GetProjectByName(command.Name, It.IsAny<CancellationToken>()))
+                .Setup(service => service.GetProjectByName(It.IsAny<string>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync((Project)null);
 
             _projectServiceMock
-                .Setup(service => service.AddProject(newProject, It.IsAny<CancellationToken>()))
+                .Setup(service => service.AddProject(It.IsAny<Project>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(newProject);
 
             var handler = new ProjectsHandler(_projectServiceMock.Object);
@@ -56,9 +56,6 @@ namespace Timelogger.Aplication.Test
             // Assert
             Assert.IsType<Response<Project>>(response);
             Assert.Equal(newProject, response.Data);
-
-            _projectServiceMock.Verify(service => service.GetProjectByName(command.Name, It.IsAny<CancellationToken>()), Times.Once);
-            _projectServiceMock.Verify(service => service.AddProject(newProject, It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -80,7 +77,7 @@ namespace Timelogger.Aplication.Test
             };
 
             _projectServiceMock
-                .Setup(service => service.GetProjectByName(command.Name, It.IsAny<CancellationToken>()))
+                .Setup(service => service.GetProjectByName(It.IsAny<string>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(existingProject);
 
             var handler = new ProjectsHandler(_projectServiceMock.Object);

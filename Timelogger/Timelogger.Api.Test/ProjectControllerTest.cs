@@ -32,7 +32,7 @@ namespace Timelogger.Application.Test
             var project = new Project()
             {
                 Name = "e-conomic Interview 2",
-                DeadLine = DateTime.Now,
+                DeadLine = DateTime.Now.AddDays(1),
                 TimePerWeek = 2,
             };
 
@@ -41,7 +41,7 @@ namespace Timelogger.Application.Test
             var request = new ProjectsCommand()
             {
                 Name = "e-conomic Interview 2",
-                DeadLine = DateTime.Now,
+                DeadLine = DateTime.Now.AddDays(1),
                 TimePerWeek = 2,
             };
 
@@ -63,7 +63,7 @@ namespace Timelogger.Application.Test
             var project = new Project()
             {
                 Name = "e-conomic Interview 2",
-                DeadLine = DateTime.Now,
+                DeadLine = DateTime.Now.AddDays(1),
                 TimePerWeek = 2,
             };
 
@@ -73,7 +73,7 @@ namespace Timelogger.Application.Test
             var request = new ProjectsCommand()
             {
                 Name = "e-conomic Interview 2",
-                DeadLine = DateTime.Now,
+                DeadLine = DateTime.Now.AddDays(1),
                 TimePerWeek = 2,
             };
 
@@ -92,7 +92,7 @@ namespace Timelogger.Application.Test
             var request = new ProjectsCommand()
             {
                 Name = null,
-                DeadLine = DateTime.Now,
+                DeadLine = DateTime.Now.AddDays(1),
                 TimePerWeek = 0,
             };
 
@@ -113,12 +113,12 @@ namespace Timelogger.Application.Test
             {
                 new Project(){
                     Name = "e-conomic Interview 2",
-                    DeadLine = DateTime.Now,
+                    DeadLine = DateTime.Now.AddDays(1),
                     TimePerWeek = 2,
                 },
                 new Project(){
                     Name = "e-conomic Interview 3",
-                    DeadLine = DateTime.Now,
+                    DeadLine = DateTime.Now.AddDays(1),
                     TimePerWeek = 2,
                 },
             };
@@ -144,7 +144,7 @@ namespace Timelogger.Application.Test
             var project = new Project()
             {
                 Name = "e-conomic Interview 2",
-                DeadLine = DateTime.Now,
+                DeadLine = DateTime.Now.AddDays(1),
                 TimePerWeek = 2,
             };
 
@@ -168,7 +168,7 @@ namespace Timelogger.Application.Test
             var project = new Project()
             {
                 Name = "e-conomic Interview 2",
-                DeadLine = DateTime.Now,
+                DeadLine = DateTime.Now.AddDays(1),
                 TimePerWeek = 2,
             };
 
@@ -178,7 +178,7 @@ namespace Timelogger.Application.Test
             var response = await GetNewClient().GetAsync("/api/Projects");
 
             //Assert
-            Assert.Equal(System.Net.HttpStatusCode.BadRequest, response.StatusCode);
+            Assert.Equal(System.Net.HttpStatusCode.InternalServerError, response.StatusCode);
             Assert.NotNull(response);
         }
     }

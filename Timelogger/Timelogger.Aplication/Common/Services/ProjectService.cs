@@ -30,6 +30,7 @@ namespace Timelogger.Aplication.Test
             var project = new Project();
 
             // Act
+            _unitOfWorkMock.Setup(x => x.ProjectRepository.AddAsync(It.IsAny<Project>(), It.IsAny<CancellationToken>())).ReturnsAsync(project);
             var result = await _projectService.AddProject(project, cancellationToken);
 
             // Assert
@@ -44,8 +45,12 @@ namespace Timelogger.Aplication.Test
             // Arrange
             var cancellationToken = new CancellationToken();
             var isCompleted = true;
+            var projects = new List<Project>() {
+                new Project() { Id = "project1", Name = "ProjectName" }
+            };
 
             // Act
+            _unitOfWorkMock.Setup(x => x.ProjectRepository.FindAllAsync(It.IsAny<Expression<Func<Project, bool>>>(), cancellationToken)).ReturnsAsync(projects);
             var result = await _projectService.GetAllProjects(isCompleted, cancellationToken);
 
             // Assert
@@ -59,10 +64,11 @@ namespace Timelogger.Aplication.Test
         {
             // Arrange
             var cancellationToken = new CancellationToken();
-            var id = "project1";
+            var project = new Project() { Id = "project1", Name = "ProjectName" };
 
             // Act
-            var result = await _projectService.GetProject(id, cancellationToken);
+            _unitOfWorkMock.Setup(x => x.ProjectRepository.FindAsync(It.IsAny<Expression<Func<Project, bool>>>(), cancellationToken)).ReturnsAsync(project);
+            var result = await _projectService.GetProject(project.Id, cancellationToken);
 
             // Assert
             _unitOfWorkMock.Verify(x => x.ProjectRepository.FindAsync(
@@ -78,6 +84,7 @@ namespace Timelogger.Aplication.Test
             var project = new Project() { Id = "project1" };
 
             // Act
+            _unitOfWorkMock.Setup(x => x.ProjectRepository.UpdateAsync(It.IsAny<Project>(), It.IsAny<string>(), It.IsAny<CancellationToken>())).ReturnsAsync(project);
             var result = await _projectService.UpdateProject(project, cancellationToken);
 
             // Assert
@@ -91,10 +98,11 @@ namespace Timelogger.Aplication.Test
         {
             // Arrange
             var cancellationToken = new CancellationToken();
-            var name = "ProjectName";
+            var project = new Project() { Id = "project1", Name = "ProjectName" };
 
             // Act
-            var result = await _projectService.GetProjectByName(name, cancellationToken);
+            _unitOfWorkMock.Setup(x => x.ProjectRepository.FindAsync(It.IsAny<Expression<Func<Project, bool>>>(), cancellationToken)).ReturnsAsync(project);
+            var result = await _projectService.GetProjectByName(project.Name, cancellationToken);
 
             // Assert
             _unitOfWorkMock.Verify(x => x.ProjectRepository.FindAsync(

@@ -41,11 +41,11 @@ namespace Timelogger.Aplication.Test
         {
             // Arrange
             var projectId = "project-id";
-            var request = new InvoiceCommand { ProjectId = projectId };
+            var request = new InvoiceCommand { ProjectId = projectId, DevName = "DevName", DevDocNumber= "DevDocNumber", CustomerName = "CustomerName", CustomerDocNumber  = "CustomerDocNumber" };
             var project = new Project { Id = projectId };
             var invoice = new Invoice { ProjectId = projectId };
             _projectServiceMock
-                .Setup(x => x.GetProject(projectId, It.IsAny<CancellationToken>()))
+                .Setup(x => x.GetProject(It.IsAny<string>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(project);
             _invoiceServiceMock
                 .Setup(x => x.AddInvoice(It.IsAny<Invoice>(), It.IsAny<CancellationToken>()))
@@ -55,7 +55,7 @@ namespace Timelogger.Aplication.Test
             var result = await _handler.Handle(request, CancellationToken.None);
 
             // Assert
-            _invoiceServiceMock.Verify(x => x.AddInvoice(invoice, It.IsAny<CancellationToken>()), Times.Once);
+            _invoiceServiceMock.Verify(x => x.AddInvoice(It.IsAny<Invoice>(), It.IsAny<CancellationToken>()), Times.Once);
             Assert.Equal(invoice, result.Data);
         }
     }

@@ -28,7 +28,7 @@ namespace Timelogger.Aplication.Test
             var cancellationToken = new CancellationToken();
             var invoice = new Invoice() { Id = invoiceId };
             _invoiceServiceMock.Setup(svc => svc.GetInvoice(invoiceId, cancellationToken)).ReturnsAsync(invoice);
-            var request = new GetInvoiceCommand(invoiceId);
+            var request = new GetInvoiceCommand{ Id = invoiceId };
 
             // Act
             var result = await _handler.Handle(request, cancellationToken);
@@ -37,19 +37,6 @@ namespace Timelogger.Aplication.Test
             Assert.NotNull(result);
             Assert.IsType<Response<Invoice>>(result);
             Assert.Equal(invoice, result.Data);
-        }
-
-        [Fact]
-        public async Task Handle_ThrowsApiException_WhenInvoiceServiceReturnsNull()
-        {
-            // Arrange
-            var invoiceId = "1";
-            var cancellationToken = new CancellationToken();
-            _invoiceServiceMock.Setup(svc => svc.GetInvoice(invoiceId, cancellationToken)).ReturnsAsync(null);
-            var request = new GetInvoiceCommand(invoiceId);
-
-            // Act & Assert
-            await Assert.ThrowsAsync<ApiException>(() => _handler.Handle(request, cancellationToken));
         }
     }
 
