@@ -31,7 +31,7 @@ namespace ContentManager
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddPersistance();
+            services.AddPersistance(Configuration);
             services.AddApplication();
 
             services.AddControllers();
@@ -42,8 +42,10 @@ namespace ContentManager
                 builder.AddDebug();
             });
 
-           
-            services.AddCors();
+            if (_environment.IsDevelopment())
+            {
+                services.AddCors();
+            }
             services.AddSwaggerGen();
         }
 

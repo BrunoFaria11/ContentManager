@@ -28,7 +28,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.19" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Timelogger.Domain\ContentManager.Domain.csproj" />
+    <ProjectReference Include="..\ContentManager.Domain\ContentManager.Domain.csproj" />
     <ProjectReference Include="..\ContentManager.Application\ContentManager.Application.csproj" />
   </ItemGroup>
 </Project>

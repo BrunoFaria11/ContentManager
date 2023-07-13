@@ -3,15 +3,16 @@ using ContentManager.Common.Interfaces.Repositories;
 using ContentManager.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
+using Microsoft.Extensions.Configuration;
+using ContentManager.Persistance.Helpers;
 
 namespace ContentManager.Persistance
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddPersistance(this IServiceCollection services)
+        public static IServiceCollection AddPersistance(this IServiceCollection services,  IConfiguration configuration)
         {
-
-            var connectionString = "Server = SQL6031.site4now.net; Database = db_a4acd8_cm; User Id = db_a4acd8_cm_admin;Password = TTTuuu987;Encrypt=True;TrustServerCertificate=True;";
+            var connectionString = RepositoryHelpers.GetConnectionString(configuration);
 
             services.AddDbContext<CMDbContext>(opt =>
             {

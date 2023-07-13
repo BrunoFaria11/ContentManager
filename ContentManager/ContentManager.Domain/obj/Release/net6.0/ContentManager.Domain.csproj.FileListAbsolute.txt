@@ -10,3 +10,15 @@
 /Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Release/net6.0/refint/ContentManager.Domain.dll
 /Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Release/net6.0/ContentManager.Domain.pdb
 /Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Release/net6.0/ref/ContentManager.Domain.dll
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\bin\Release\net6.0\ContentManager.Domain.deps.json
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\bin\Release\net6.0\ContentManager.Domain.dll
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\bin\Release\net6.0\ContentManager.Domain.pdb
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\obj\Release\net6.0\ContentManager.Domain.csproj.AssemblyReference.cache
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\obj\Release\net6.0\ContentManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\obj\Release\net6.0\ContentManager.Domain.AssemblyInfoInputs.cache
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\obj\Release\net6.0\ContentManager.Domain.AssemblyInfo.cs
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\obj\Release\net6.0\ContentManager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\obj\Release\net6.0\ContentManager.Domain.dll
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\obj\Release\net6.0\refint\ContentManager.Domain.dll
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\obj\Release\net6.0\ContentManager.Domain.pdb
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Domain\obj\Release\net6.0\ref\ContentManager.Domain.dll
