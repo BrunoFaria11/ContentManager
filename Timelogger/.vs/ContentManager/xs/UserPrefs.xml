@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{7C55DFF0-1D1A-42EA-BF47-055DEF9DAC6A}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Api.ContentManager PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <DisabledProjects>
+    <String>Timelogger.Api.Test/Timelogger.Aplication.Test/Timelogger.Aplication.Test.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" relfile="Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" line="41" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" relfile="Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" line="47" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" relfile="Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" line="28" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Api.Test/ProjectControllerTest.cs" relfile="Timelogger.Api.Test/ProjectControllerTest.cs" line="134" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Api.Test/ProjectControllerTest.cs" relfile="Timelogger.Api.Test/ProjectControllerTest.cs" line="159" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Api.Test/ProjectControllerTest.cs" relfile="Timelogger.Api.Test/ProjectControllerTest.cs" line="55" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Api.Test/ProjectControllerTest.cs" relfile="Timelogger.Api.Test/ProjectControllerTest.cs" line="84" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Api.Test/ProjectControllerTest.cs" relfile="Timelogger.Api.Test/ProjectControllerTest.cs" line="85" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Aplication/Invoice/Commands/Add/InvoiceHandler.cs" relfile="Timelogger.Aplication/Invoice/Commands/Add/InvoiceHandler.cs" line="59" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Aplication/Invoice/Commands/Add/InvoiceHandler.cs" relfile="Timelogger.Aplication/Invoice/Commands/Add/InvoiceHandler.cs" line="58" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Aplication/Project/Commands/Add/ProjectsHandler.cs" relfile="Timelogger.Aplication/Project/Commands/Add/ProjectsHandler.cs" line="86" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Aplication/Project/Commands/Add/ProjectsHandler.cs" relfile="Timelogger.Aplication/Project/Commands/Add/ProjectsHandler.cs" line="83" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger/Middlewares/ErrorHandlerMiddleware.cs" relfile="Timelogger/Middlewares/ErrorHandlerMiddleware.cs" line="63" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/Repositories/UnityOfWork.cs" relfile="Timelogger.Persistance/Repositories/UnityOfWork.cs" line="31" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Application/Application/Commands/Add/ApplicationHandler.cs" relfile="Timelogger.Application/Application/Commands/Add/ApplicationHandler.cs" line="39" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Application/Application/Commands/Add/ApplicationHandler.cs" relfile="Timelogger.Application/Application/Commands/Add/ApplicationHandler.cs" line="37" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Application/Application/Commands/Add/ApplicationHandler.cs" relfile="Timelogger.Application/Application/Commands/Add/ApplicationHandler.cs" line="25" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ContentManager.Persistance/Repositories/UnityOfWork.cs">
+    <Files>
+      <File FileName="ContentManager.Persistance/Repositories/UnityOfWork.cs" Line="16" Column="62" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ContentManager" expanded="True">
+            <Node name="Api" expanded="True">
+              <Node name="ContentManager.Persistance" expanded="True" />
+            </Node>
+            <Node name="Solution Items" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>

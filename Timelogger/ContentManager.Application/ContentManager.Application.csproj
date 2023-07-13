@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MediatR" />
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.DependencyInjectionExtensions" />
+    <None Remove="Project\Commands\Add\" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Project\Queries\" />
+    <None Remove="Project\Queries\GetAll\" />
+    <None Remove="System.Linq" />
+    <None Remove="Project\Queries\Get\" />
+    <None Remove="Project\Commands\Update\" />
+    <None Remove="TimeHistory\" />
+    <None Remove="TimerHistory\Commands\" />
+    <None Remove="TimerHistory\Queries\" />
+    <None Remove="Common\Exceptions\" />
+    <None Remove="TimerHistory %28copy%29\" />
+    <None Remove="System.Linq.Expressions" />
+    <None Remove="Application %28copy%29\" />
+    <None Remove="Mailjet.Api" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+    <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
+    <PackageReference Include="Mailjet.Api" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Model\Commands\" />
+    <Folder Include="Model\Queries\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Application\" />
+    <Folder Include="Email\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContentManager.Domain\ContentManager.Domain.csproj" />
+  </ItemGroup>
+</Project>

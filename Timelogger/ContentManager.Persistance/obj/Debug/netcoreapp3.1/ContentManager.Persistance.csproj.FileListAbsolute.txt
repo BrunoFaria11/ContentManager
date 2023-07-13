@@ -1,0 +1,15 @@
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/ContentManager.Persistance.deps.json
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/ContentManager.Persistance.dll
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/ContentManager.Persistance.pdb
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/ContentManager.Application.dll
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/ContentManager.Domain.dll
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/ContentManager.Application.pdb
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/bin/Debug/netcoreapp3.1/ContentManager.Domain.pdb
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/ContentManager.Persistance.csproj.AssemblyReference.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/ContentManager.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/ContentManager.Persistance.AssemblyInfoInputs.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/ContentManager.Persistance.AssemblyInfo.cs
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/ContentManager.Persistance.csproj.CoreCompileInputs.cache
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/ContentManager.Persistance.csproj.CopyComplete
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/ContentManager.Persistance.dll
+/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Persistance/obj/Debug/netcoreapp3.1/ContentManager.Persistance.pdb

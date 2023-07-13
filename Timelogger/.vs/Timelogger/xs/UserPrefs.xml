@@ -2,37 +2,25 @@
   <MonoDevelop.Ide.ItemProperties.Api.Timelogger PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Timelogger.Test/Timelogger.Domain.Test/obj/Debug/netcoreapp3.1/Timelogger.Domain.Test.AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Timelogger.Application/Common/Behaviours/ValidationBehaviour.cs">
     <Files>
-      <File FileName="Timelogger.Application/Invoice/Commands/Update/UpdateInvoiceValidation.cs" Line="13" Column="1" />
-      <File FileName="Timelogger.Application/Invoice/Commands/Update/UpdateInvoiceCommand.cs" Line="14" Column="54" />
-      <File FileName="Timelogger.Application/Invoice/Commands/Add/InvoiceValidation.cs" Line="14" Column="13" />
-      <File FileName="Timelogger.Test/UnitTest1.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Test/Timelogger.Domain.Test/UnitTest1.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Test/Timelogger.Persistance.Test/UnitTest1.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Application/TimerHistory/Commands/Add/TimerHistoryCommand.cs" Line="12" Column="33" />
-      <File FileName="Timelogger.Application/TimerHistory/Commands/Add/TimerHistoryHandler.cs" Line="47" Column="14" />
-      <File FileName="Timelogger.Application/TimerHistory/Commands/Update/UpdateTimerHistoryHandler.cs" Line="45" Column="81" />
-      <File FileName="Timelogger.Domain/Entities/Project.cs" Line="26" Column="1" />
-      <File FileName="Timelogger.Application/Invoice/Commands/Add/InvoiceCommand.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Application/Invoice/Commands/Add/InvoiceHandler.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Application/Project/Commands/Add/ProjectsValidation.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Application/TimerHistory/Commands/Add/TimerHistoryValidation.cs" Line="22" Column="79" />
-      <File FileName="Timelogger.Application/DependencyInjection.cs" Line="17" Column="47" />
-      <File FileName="Timelogger.Application/Project/Commands/Add/ProjectsCommand.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Application/Project/Commands/Add/ProjectsHandler.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Domain/Entities/Invoice.cs" Line="44" Column="3" />
-      <File FileName="Timelogger.Domain/Entities/TimerHistory.cs" Line="24" Column="3" />
-      <File FileName="Timelogger.Application/TimerHistory/Commands/Update/UpdateTimerHistoryCommand.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Test/Timelogger.Application.Test/InvoiceController.cs" Line="6" Column="27" />
-      <File FileName="Timelogger/Startup.cs" Line="97" Column="5" />
-      <File FileName="Timelogger.Application/Common/Interfaces/Services/IProjectService.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Application/Common/Models/Response.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Test/Timelogger.Application.Test/TimerHistoryController.cs" Line="6" Column="40" />
-      <File FileName="Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" Line="1" Column="1" />
-      <File FileName="Timelogger.Test/Timelogger.Domain.Test/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" Line="4" Column="12" />
-      <File FileName="Timelogger.Test/Timelogger.Domain.Test/obj/Debug/netcoreapp3.1/Timelogger.Domain.Test.AssemblyInfo.cs" Line="19" Column="12" />
-      <File FileName="Timelogger.Test/Timelogger.Persistance.Test/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" Line="4" Column="12" />
+      <File FileName="Timelogger.Application/Common/Services/ProjectService.cs" Line="32" Column="10" />
+      <File FileName="Timelogger/Controllers/ProjectsController.cs" Line="31" Column="83" />
+      <File FileName="Timelogger.Application/Project/Commands/Add/ProjectsHandler.cs" Line="11" Column="61" />
+      <File FileName="Timelogger.Application/Project/Queries/Get/GetProjectsHandler.cs" Line="23" Column="59" />
+      <File FileName="Timelogger.Application/Project/Queries/Get/GetProjectsCommand.cs" Line="1" Column="1" />
+      <File FileName="Timelogger/Controllers/InvoiceController.cs" Line="1" Column="1" />
+      <File FileName="Timelogger.Domain/Entities/Invoice.cs" Line="1" Column="1" />
+      <File FileName="Timelogger.Domain/Entities/Project.cs" Line="1" Column="1" />
+      <File FileName="Timelogger/Program.cs" Line="1" Column="1" />
+      <File FileName="Timelogger/Startup.cs" Line="69" Column="47" />
+      <File FileName="Timelogger.Application/Project/Queries/Get/GetProjectsValidation.cs" Line="1" Column="1" />
+      <File FileName="Timelogger.Persistance/Repositories/ProjectRepository.cs" Line="1" Column="1" />
+      <File FileName="Timelogger.Persistance/Repositories/EfRepository.cs" Line="1" Column="1" />
+      <File FileName="Timelogger.Application/TimerHistory/Commands/Add/TimerHistoryHandler.cs" Line="28" Column="59" />
+      <File FileName="Timelogger/Middlewares/ErrorHandlerMiddleware.cs" Line="59" Column="34" />
+      <File FileName="Timelogger.Application/DependencyInjection.cs" Line="1" Column="1" />
+      <File FileName="Timelogger.Application/Common/Behaviours/ValidationBehaviour.cs" Line="30" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -40,23 +28,21 @@
           <Node name="Timelogger" expanded="True">
             <Node name="Api" expanded="True">
               <Node name="Timelogger" expanded="True">
-                <Node name="Controllers" expanded="True" />
+                <Node name="Middlewares" expanded="True" />
               </Node>
               <Node name="Timelogger.Application" expanded="True">
                 <Node name="Common" expanded="True">
-                  <Node name="Models" expanded="True" />
+                  <Node name="Behaviours" expanded="True" />
+                  <Node name="Services" expanded="True" />
+                </Node>
+                <Node name="Invoice" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="Add" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
-              <Node name="Timelogger.Domain" expanded="True" />
             </Node>
-            <Node name="Tests" expanded="True">
-              <Node name="Timelogger.Application.Test" expanded="True">
-                <Node name="Dependencies" expanded="True" />
-              </Node>
-              <Node name="Timelogger.Test" expanded="True">
-                <Node name="Timelogger.Domain.Test" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -65,11 +51,11 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Timelogger" expanded="True">
-            <Node name="Tests" expanded="True">
-              <Node name="Timelogger.Application.Test" expanded="True" />
-              <Node name="Timelogger.Persistance.Test" expanded="True" />
-              <Node name="Timelogger.Test" expanded="True" selected="True" />
+          <Node name="Timelogger" expanded="True" selected="True">
+            <Node name="Timelogger.Aplication" expanded="True">
+              <Node name="Timelogger.Aplication.Test" expanded="True">
+                <Node name="TimerHistoryHandlerTests" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -78,10 +64,19 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger/Startup.cs" relfile="Timelogger/Startup.cs" line="106" column="1" />
       <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" relfile="Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" line="41" column="1" />
       <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" relfile="Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" line="47" column="1" />
       <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" relfile="Timelogger.Test/Timelogger.Application.Test/ProjectControllerTest.cs" line="28" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Api.Test/ProjectControllerTest.cs" relfile="Timelogger.Api.Test/ProjectControllerTest.cs" line="134" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Api.Test/ProjectControllerTest.cs" relfile="Timelogger.Api.Test/ProjectControllerTest.cs" line="159" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Api.Test/ProjectControllerTest.cs" relfile="Timelogger.Api.Test/ProjectControllerTest.cs" line="55" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Api.Test/ProjectControllerTest.cs" relfile="Timelogger.Api.Test/ProjectControllerTest.cs" line="84" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Api.Test/ProjectControllerTest.cs" relfile="Timelogger.Api.Test/ProjectControllerTest.cs" line="85" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Aplication/Invoice/Commands/Add/InvoiceHandler.cs" relfile="Timelogger.Aplication/Invoice/Commands/Add/InvoiceHandler.cs" line="59" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Aplication/Invoice/Commands/Add/InvoiceHandler.cs" relfile="Timelogger.Aplication/Invoice/Commands/Add/InvoiceHandler.cs" line="58" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Aplication/Project/Commands/Add/ProjectsHandler.cs" relfile="Timelogger.Aplication/Project/Commands/Add/ProjectsHandler.cs" line="86" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger.Aplication/Project/Commands/Add/ProjectsHandler.cs" relfile="Timelogger.Aplication/Project/Commands/Add/ProjectsHandler.cs" line="83" column="1" />
+      <Breakpoint file="/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/Timelogger/Middlewares/ErrorHandlerMiddleware.cs" relfile="Timelogger/Middlewares/ErrorHandlerMiddleware.cs" line="63" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

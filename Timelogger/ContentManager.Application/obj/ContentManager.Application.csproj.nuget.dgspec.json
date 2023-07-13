@@ -1,0 +1,152 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Application/ContentManager.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Application/ContentManager.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Application/ContentManager.Application.csproj",
+        "projectName": "ContentManager.Application",
+        "projectPath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Application/ContentManager.Application.csproj",
+        "packagesPath": "/Users/brunofaria/.nuget/packages/",
+        "outputPath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/brunofaria/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/ContentManager.Domain.csproj": {
+                "projectPath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/ContentManager.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "Mailjet.Api": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Linq.Expressions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/ContentManager.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/ContentManager.Domain.csproj",
+        "projectName": "ContentManager.Domain",
+        "projectPath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/ContentManager.Domain.csproj",
+        "packagesPath": "/Users/brunofaria/.nuget/packages/",
+        "outputPath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/brunofaria/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
