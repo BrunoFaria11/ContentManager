@@ -22,3 +22,15 @@
 /Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/obj/Debug/net6.0/refint/ContentManager.Domain.dll
 /Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/obj/Debug/net6.0/ContentManager.Domain.pdb
 /Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/obj/Debug/net6.0/ref/ContentManager.Domain.dll
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/bin/Debug/net6.0/ContentManager.Domain.deps.json
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/bin/Debug/net6.0/ContentManager.Domain.dll
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/bin/Debug/net6.0/ContentManager.Domain.pdb
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Debug/net6.0/ContentManager.Domain.csproj.AssemblyReference.cache
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Debug/net6.0/ContentManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Debug/net6.0/ContentManager.Domain.AssemblyInfoInputs.cache
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Debug/net6.0/ContentManager.Domain.AssemblyInfo.cs
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Debug/net6.0/ContentManager.Domain.csproj.CoreCompileInputs.cache
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Debug/net6.0/ContentManager.Domain.dll
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Debug/net6.0/refint/ContentManager.Domain.dll
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Debug/net6.0/ContentManager.Domain.pdb
+/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/obj/Debug/net6.0/ref/ContentManager.Domain.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GR4xBESaJEfL6I7gi8aBd3nnVqRHm+IZq8pbMPjgGPN8eravb90vGjkx5ubNALzRrn4HPiSmzexg22/IuWkvkg==",
+  "dgSpecHash": "N3poEA2xE4xqiNAu/46+yesFosQRyNnCZ21Q0QpyThJMs7KLS07HgQy3mZ4co/DETOaDUXMjjrDkirgdIUcatg==",
   "success": true,
-  "projectFilePath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Application/ContentManager.Application.csproj",
+  "projectFilePath": "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Application/ContentManager.Application.csproj",
   "expectedPackageFiles": [
     "/Users/brunofaria/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
     "/Users/brunofaria/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",

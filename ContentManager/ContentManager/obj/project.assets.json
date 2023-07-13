@@ -6921,11 +6921,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager/ContentManager.csproj",
+      "projectUniqueName": "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager/ContentManager.csproj",
       "projectName": "ContentManager",
-      "projectPath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager/ContentManager.csproj",
+      "projectPath": "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager/ContentManager.csproj",
       "packagesPath": "/Users/brunofaria/.nuget/packages/",
-      "outputPath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager/obj/",
+      "outputPath": "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/brunofaria/.nuget/NuGet/NuGet.Config"
@@ -6940,14 +6940,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Application/ContentManager.Application.csproj": {
-              "projectPath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Application/ContentManager.Application.csproj"
+            "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Application/ContentManager.Application.csproj": {
+              "projectPath": "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Application/ContentManager.Application.csproj"
             },
-            "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/ContentManager.Domain.csproj": {
-              "projectPath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/ContentManager.Domain.csproj"
+            "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/ContentManager.Domain.csproj": {
+              "projectPath": "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/ContentManager.Domain.csproj"
             },
-            "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Persistance/ContentManager.Persistance.csproj": {
-              "projectPath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Persistance/ContentManager.Persistance.csproj"
+            "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Persistance/ContentManager.Persistance.csproj": {
+              "projectPath": "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Persistance/ContentManager.Persistance.csproj"
             }
           }
         }

@@ -10,8 +10,8 @@ namespace ContentManager.Persistance
     {
         public static IServiceCollection AddPersistance(this IServiceCollection services)
         {
-            
-            var connectionString = "Server = mssql-134346-0.cloudclusters.net,10136; Database = CM; User Id = Bruno;Password = TTTuuu987;Encrypt=True;TrustServerCertificate=True;";
+
+            var connectionString = "Server = SQL6031.site4now.net; Database = db_a4acd8_cm; User Id = db_a4acd8_cm_admin;Password = TTTuuu987;Encrypt=True;TrustServerCertificate=True;";
 
             services.AddDbContext<CMDbContext>(opt =>
             {

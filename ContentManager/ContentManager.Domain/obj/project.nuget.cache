@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pIxv0pT06LAjZq3mb+3VYOldSGSQFUb3+hqOabEiGMrgtfJClMqE1JifeL1pgBOLJT6y4/BbdMyTtUs04fgdDg==",
+  "dgSpecHash": "59b1lAIkUvCXQ7RVfSnzycc2hi1N3sUDP/56yfHaW1NnAeU7d+jM8dNEGFFTD7zCOoxpuZ249nb4Sq+J+Q300A==",
   "success": true,
-  "projectFilePath": "/Users/brunofaria/Documents/Projects/Visma/bruno/Timelogger/ContentManager.Domain/ContentManager.Domain.csproj",
+  "projectFilePath": "/Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Domain/ContentManager.Domain.csproj",
   "expectedPackageFiles": [
     "/Users/brunofaria/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/brunofaria/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

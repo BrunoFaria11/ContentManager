@@ -42,11 +42,9 @@ namespace ContentManager
                 builder.AddDebug();
             });
 
-            if (_environment.IsDevelopment())
-            {
-                services.AddCors();
-                services.AddSwaggerGen();
-            }
+           
+            services.AddCors();
+            services.AddSwaggerGen();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
