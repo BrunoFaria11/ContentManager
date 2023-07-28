@@ -55,9 +55,6 @@
 /Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Persistance/obj/Debug/net6.0/ContentManager.Persistance.pdb
 /Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Persistance/obj/Debug/net6.0/ContentManager.Persistance.genruntimeconfig.cache
 /Users/brunofaria/Documents/Projects/ContentManager/ContentManager/ContentManager.Persistance/obj/Debug/net6.0/ref/ContentManager.Persistance.dll
-C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\ContentManager.Persistance.dll
-C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\refint\ContentManager.Persistance.dll
-C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\ContentManager.Persistance.pdb
 C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\bin\Debug\net6.0\ContentManager.Persistance.deps.json
 C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\bin\Debug\net6.0\ContentManager.Persistance.runtimeconfig.json
 C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\bin\Debug\net6.0\ContentManager.Persistance.dll
@@ -72,5 +69,8 @@ C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentMana
 C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\ContentManager.Persistance.AssemblyInfo.cs
 C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\ContentManager.Persistance.csproj.CoreCompileInputs.cache
 C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\ContentManager.Persistance.csproj.CopyComplete
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\ContentManager.Persistance.dll
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\refint\ContentManager.Persistance.dll
+C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\ContentManager.Persistance.pdb
 C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\ContentManager.Persistance.genruntimeconfig.cache
 C:\Users\bruno.faria\Projects\Personal\ContentManager\ContentManager\ContentManager.Persistance\obj\Debug\net6.0\ref\ContentManager.Persistance.dll
